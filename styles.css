@@ -31,6 +31,7 @@ h1 + p {
 
 h2 {
   font-size: 1.3125rem;
+  margin: 0;
 }
 
 h2 + p {
@@ -38,6 +39,7 @@ h2 + p {
   font-size: 1rem;
   font-weight: 900;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .top-text {
@@ -69,12 +71,15 @@ strong {
   justify-content: space-between;
   background-color: #404040;
   background-image: url(/images/dark-ribs.jpg);
+  background-size: cover;
+  background-position: center;
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 0 0.25em 1em;
+}
+
+.main-content {
+  padding: 2em 1em;
 }
 
 input,
@@ -100,4 +105,29 @@ button {
   padding-top: 1.1em;
   padding-bottom: 1.8em;
   letter-spacing: 1.5px;
+}
+
+/* media queries */
+
+@media (min-width: 550px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h1 + p,
+  h2 {
+    font-size: 1.75;
+  }
+  .splitter {
+    display: flex;
+  }
+
+  .hero,
+  .main-content {
+    width: 50%;
+  }
 }
