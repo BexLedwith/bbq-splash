@@ -29,10 +29,22 @@
           is to learn from the best. You can do just that by signing up for this
           free webinar!
         </p>
-        <form>
-          <input type="text" id="name" placeholder="first name" />
-          <input type="email" id="email" placeholder="email" />
-          <button type="submit">register</button>
+        <form class="email-collector" action="#" method="post">
+          <input
+            aria-label="first name"
+            type="text"
+            id="name"
+            placeholder="first name"
+            required
+          />
+          <input
+            aria-label="email"
+            type="email"
+            id="email"
+            placeholder="email"
+            required
+          />
+          <button type="submit" class="btn btn-primary">register</button>
           <p class="fine-print">
             We'll never share your information without your permission
           </p>
