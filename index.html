@@ -20,7 +20,7 @@
         <p>Join us for this live webinar</p>
         <p class="top-text">mouthwateringly delicious</p>
       </div>
-      <div class="main-content">
+      <div class="main-content" id="main-content">
         <h2>Become a BBQ master!</h2>
         <p>Register today</p>
         <p>
@@ -29,27 +29,33 @@
           is to learn from the best. You can do just that by signing up for this
           free webinar!
         </p>
-        <form class="email-collector" action="#" method="post">
+        <form
+          id="Email-Collector"
+          class="email-collector"
+          action="#"
+          method="post"
+        >
           <input
             aria-label="first name"
             type="text"
-            id="name"
+            name="name"
             placeholder="first name"
             required
           />
           <input
             aria-label="email"
             type="email"
-            id="email"
+            name="email"
             placeholder="email"
             required
           />
           <button type="submit" class="btn btn-primary">register</button>
-          <p class="fine-print">
-            We'll never share your information without your permission
-          </p>
         </form>
+        <p class="fine-print">
+          We'll never share your information without your permission
+        </p>
       </div>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
